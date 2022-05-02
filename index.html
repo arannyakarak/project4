@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-4</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+
+    <script src="j/main.js" defer></script>
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+    <div class="controls leaflet-bar">
+        <input type="button" value="+Popups" onclick="addPopups()" title="Click to add popups @ random locations" />
+        <input type="button" value="-Popups" onclick="removePopups()" title="Click to remove popups" />
+        <input type="button" value="+Markers" onclick="addMarkers()"
+            title="Click to add markers with popup @ random locations. Hover & click on the marker to see the popup" />
+        <input type="button" value="-Markers" onclick="removeMarkers()" title="Click to remove markers" />
+    </div>
+    <div id="fcc" class="fcc">
+        <a href="#" onclick="hideChart()">x</a>
+        <div id="fc" class="fc">
+        </div>
+        <div id="pcc" class="pcc">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
